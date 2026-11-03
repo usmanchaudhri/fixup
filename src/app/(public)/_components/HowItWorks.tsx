@@ -1,171 +1,85 @@
-"use client";
+import type { ReactNode } from "react";
 
-import { motion } from "framer-motion";
-import {
-  Search,
-  UserCheck,
-  CalendarDays,
-  CreditCard,
-  CheckCircle2,
-} from "lucide-react";
-
-import { Card, CardContent } from "@/components/ui/card";
+function Glyph({ children }: { children: ReactNode }) {
+  return (
+    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor" aria-hidden>
+      {children}
+    </svg>
+  );
+}
 
 const steps = [
   {
-    title: "Search Services",
-    description:
-      "Browse trusted home services like plumbing, cleaning, electrical, AC repair, and more.",
-    icon: Search,
+    label: "Service",
+    icon: (
+      <Glyph>
+        <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6 1.5V9h4.5" />
+        <path d="M8 13h8v1.5H8zm0 3.5h6V18H8z" />
+      </Glyph>
+    ),
   },
   {
-    title: "Choose Technician",
-    description:
-      "Compare ratings, experience, pricing, and reviews before making your choice.",
-    icon: UserCheck,
+    label: "Technician",
+    icon: (
+      <Glyph>
+        <circle cx="12" cy="7" r="3.2" />
+        <path d="M5 20c.6-4 3.2-6 7-6s6.4 2 7 6H5z" />
+        <path d="M8 6.2h8l-.6 2.2H8.6L8 6.2z" />
+      </Glyph>
+    ),
   },
   {
-    title: "Pick Time Slot",
-    description:
-      "Select an available date and time that fits your schedule.",
-    icon: CalendarDays,
+    label: "Time",
+    icon: (
+      <Glyph>
+        <circle cx="12" cy="13" r="7" />
+        <path d="M12 9.5V13l3 2" fill="none" stroke="var(--gold)" strokeWidth="1.8" strokeLinecap="round" />
+      </Glyph>
+    ),
   },
   {
-    title: "Book & Pay",
-    description:
-      "Confirm your booking securely after technician acceptance.",
-    icon: CreditCard,
+    label: "Pay",
+    icon: (
+      <Glyph>
+        <path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 16.5v-9z" />
+        <path d="M3 10h18" stroke="var(--gold)" strokeWidth="1.6" />
+        <circle cx="16.5" cy="14.5" r="1.4" fill="var(--gold)" />
+      </Glyph>
+    ),
   },
   {
-    title: "Job Completed",
-    description:
-      "Track progress, complete the service, and leave a review.",
-    icon: CheckCircle2,
+    label: "Done",
+    icon: (
+      <Glyph>
+        <path d="M12 2.5l2.2 1.6 2.7-.2 1.2 2.4 2.4 1.2-.2 2.7L22 12l-1.7 2.2.2 2.7-2.4 1.2-1.2 2.4-2.7-.2L12 21.5l-2.2-1.6-2.7.2-1.2-2.4-2.4-1.2.2-2.7L2 12l1.7-2.2-.2-2.7 2.4-1.2 1.2-2.4 2.7.2L12 2.5z" />
+        <path d="M8 12.2l2.4 2.4 5.2-5.4" fill="none" stroke="var(--gold)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      </Glyph>
+    ),
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="py-8 md:py-12 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto mb-12 md:mb-16 max-w-2xl text-center"
-        >
-          <span className="rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
-            How It Works
-          </span>
-
-          <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">
-            Book Home Services in{" "}
-            <span className="text-primary">5 Easy Steps</span>
-          </h2>
-
-          <p className="mt-4 text-muted-foreground text-base md:text-lg">
-            From finding a professional to completing your service,
-            everything is simple, secure, and hassle-free.
-          </p>
-        </motion.div>
-
-        <div className="relative mx-auto max-w-3xl">
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 top-8 -translate-x-1/2 hidden h-[calc(100%-4rem)] w-[3px] bg-gradient-to-b from-primary/30 via-primary/20 to-transparent md:block" />
-
-          <div className="relative space-y-12 md:space-y-16">
-            {steps.map((step, index) => {
-              const Icon = step.icon;
-              const isEven = index % 2 === 0;
-
-              return (
-                <motion.div
-                  key={step.title}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className="relative"
-                >
-                  {/* Animated Connector */}
-                  {index !== steps.length - 1 && (
-                    <div className="absolute left-1/2 top-full -translate-x-1/2 hidden md:block z-0">
-                      <svg width="110" height="70" className="overflow-visible">
-                        <motion.path
-                          d={
-                            isEven
-                              ? "M 55 0 Q 55 25 25 35 Q 5 45 55 60"
-                              : "M 55 0 Q 55 25 85 35 Q 115 45 55 60"
-                          }
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary/40"
-                          initial={{ pathLength: 0 }}
-                          whileInView={{ pathLength: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: index * 0.12 }}
-                        />
-                      </svg>
-                    </div>
-                  )}
-
-                  <div
-                    className={`flex flex-col items-center md:flex-row gap-6 md:gap-10 ${
-                      !isEven ? "md:flex-row-reverse" : ""
-                    }`}
-                  >
-                    {/* Card - Smaller Size */}
-                    <Card
-                      className={`
-                        group relative w-full max-w-[340px] overflow-hidden border
-                        transition-all duration-300 hover:-translate-y-1.5
-                        hover:shadow-xl hover:shadow-primary/10
-                        hover:border-primary/50
-                        ${isEven ? "md:ml-auto" : "md:mr-auto"}
-                      `}
-                    >
-                      <CardContent className="p-6 md:p-7">
-                        {/* Icon */}
-                        <motion.div
-                          whileHover={{ scale: 1.1, rotate: isEven ? 10 : -10 }}
-                          className="
-                            mx-auto mb-5 flex h-16 w-16 items-center justify-center
-                            rounded-2xl bg-primary text-white shadow-lg
-                            ring-8 ring-background
-                          "
-                        >
-                          <Icon className="h-8 w-8" />
-                        </motion.div>
-
-                        {/* Step Number */}
-                        <div className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white text-sm font-bold text-primary shadow ring-4 ring-background">
-                          {index + 1}
-                        </div>
-
-                        <h3 className="mb-2.5 text-center text-xl font-semibold tracking-tight transition-colors group-hover:text-primary">
-                          {step.title}
-                        </h3>
-
-                        <p className="text-center text-sm md:text-base text-muted-foreground leading-relaxed">
-                          {step.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-
-                    {/* Timeline Dot */}
-                    <div className="absolute left-1/2 z-10 hidden h-6 w-6 -translate-x-1/2 rounded-full border-[5px] border-primary bg-background md:block" />
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+    <section aria-label="How a booking moves forward" className="px-6 py-10">
+      <ol className="relative mx-auto grid max-w-4xl grid-cols-5">
+        <div
+          aria-hidden
+          className="absolute left-[10%] right-[10%] top-7 h-1 rounded-full bg-[var(--gold)]"
+        />
+        {steps.map((step, index) => (
+          <li key={step.label} className="relative flex flex-col items-center text-center">
+            <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--navy)] text-white">
+              {step.icon}
+              <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--gold)] text-[11px] font-bold text-[var(--navy)]">
+                {index + 1}
+              </span>
+            </div>
+            <span className="mt-3 text-sm font-medium text-foreground sm:text-base">
+              {step.label}
+            </span>
+          </li>
+        ))}
+      </ol>
     </section>
   );
 }

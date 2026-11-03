@@ -45,7 +45,7 @@ export default function FinalCTA() {
         >
           <Badge className="border-white/20 bg-white/15 px-4 py-1 text-white hover:bg-white/20">
             <Sparkles className="mr-2 h-4 w-4" />
-            Join the FixItNow Community
+            Join the FIXUP Oman Community
           </Badge>
 
           <h2 className="mt-6 text-4xl font-bold leading-tight text-white md:text-6xl">
@@ -56,7 +56,7 @@ export default function FinalCTA() {
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/80">
             Whether you need a trusted technician or you're a skilled
-            professional looking for more clients, FixItNow connects the right
+            professional looking for more clients, FIXUP Oman connects the right
             people at the right time.
           </p>
 

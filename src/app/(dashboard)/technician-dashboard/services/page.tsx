@@ -295,7 +295,7 @@ export default async function TechnicianServicesPage() {
                     </TableCell>
 
                     <TableCell>
-                      ৳{service.price}
+                      OMR {service.price}
 
                       <p className="text-xs text-muted-foreground">
                         {service.priceType}

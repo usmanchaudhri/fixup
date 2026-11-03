@@ -14,7 +14,7 @@ export default function FeaturedServices() {
     <section className="relative py-12">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-16 max-w-2xl text-center">
-          <span className="rounded-full border border-orange-200 bg-orange-50 px-4 py-1 text-sm font-semibold text-[#ff7308]">
+          <span className="rounded-full border border-orange-200 bg-orange-50 px-4 py-1 text-sm font-semibold text-[#E6B000]">
             Featured Services
           </span>
 
@@ -43,7 +43,7 @@ export default function FeaturedServices() {
                   delay: index * 0.08,
                 }}
               >
-                <Card className="group overflow-hidden rounded-3xl border transition-all duration-500 hover:-translate-y-2 hover:border-[#ff7308]/60 hover:shadow-2xl hover:shadow-orange-500/20">
+                <Card className="group overflow-hidden rounded-3xl border transition-all duration-500 hover:-translate-y-2 hover:border-[#E6B000]/60 hover:shadow-2xl hover:shadow-orange-500/20">
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={service.image}
@@ -57,7 +57,7 @@ export default function FeaturedServices() {
                       {service.rating}
                     </div>
 
-                    <div className="absolute right-4 top-4 rounded-full bg-[#ff7308] p-3 text-white shadow-lg">
+                    <div className="absolute right-4 top-4 rounded-full bg-[#E6B000] p-3 text-white shadow-lg">
                       <Icon className="h-5 w-5" />
                     </div>
 
@@ -70,7 +70,7 @@ export default function FeaturedServices() {
                         {service.title}
                       </h3>
 
-                      <span className="font-bold text-[#ff7308]">
+                      <span className="font-bold text-[#E6B000]">
                         From {service.price}
                       </span>
                     </div>
@@ -85,7 +85,7 @@ export default function FeaturedServices() {
                       </span>
 
                       <Button
-                        className="group rounded-full bg-[#ff7308] hover:bg-[#e76800]"
+                        className="group rounded-full bg-[#E6B000] hover:bg-[#e76800]"
                       >
                         Book Now
 

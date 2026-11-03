@@ -262,7 +262,7 @@
 //                           className="
 //                             h-12
 //                             w-full
-//                             bg-[#ff7308]
+//                             bg-[#E6B000]
 //                             px-6
 //                             text-white
 //                             shadow-lg
@@ -408,7 +408,7 @@
 //                                   text-white/80
 //                                 "
 //                               >
-//                                 FixItNow
+//                                 FIXUP Oman
 //                               </p>
 
 //                               <p
@@ -1262,7 +1262,7 @@ export default function HeroCarousel() {
                             className="
                               h-12
                               w-full
-                              bg-[#ff7308]
+                              bg-[#E6B000]
                               px-6
                               text-white
                               shadow-lg
@@ -1583,7 +1583,7 @@ export default function HeroCarousel() {
                                   text-white/80
                                 "
                               >
-                                FixItNow
+                                FIXUP Oman
                               </p>
 
                               <p

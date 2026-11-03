@@ -151,7 +151,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         <div className="flex items-end justify-between pt-2">
           <div>
             <h4 className="text-2xl font-bold">
-              ${service.price}
+              OMR {service.price}
             </h4>
 
             <p className="text-xs text-muted-foreground">

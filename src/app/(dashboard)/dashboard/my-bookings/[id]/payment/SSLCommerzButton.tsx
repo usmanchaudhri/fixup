@@ -25,7 +25,7 @@ export default function SSLCommerzButton({
         amount,
         method: "CARD",
         provider: "SSLCOMMERZ",
-        currency: "USD",
+        currency: "OMR",
       });
 
       if (!result.success) {

@@ -60,7 +60,7 @@ export default function SettingsAdminPage() {
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
         <p className="text-muted-foreground">
-          Manage platform configuration and preferences for FixItNow
+          Manage platform configuration and preferences for FIXUP Oman
         </p>
       </div>
 
@@ -81,7 +81,7 @@ export default function SettingsAdminPage() {
             <CardContent className="space-y-5">
               <div className="grid gap-2">
                 <Label htmlFor="platform-name">Platform Name</Label>
-                <Input id="platform-name" defaultValue="FixItNow" />
+                <Input id="platform-name" defaultValue="FIXUP Oman" />
               </div>
 
               <div className="grid gap-2">
@@ -89,7 +89,7 @@ export default function SettingsAdminPage() {
                 <Input
                   id="support-email"
                   type="email"
-                  defaultValue="support@fixitnow.com"
+                  defaultValue="support@fixup.om"
                 />
               </div>
 
@@ -98,7 +98,7 @@ export default function SettingsAdminPage() {
                 <Input
                   id="support-phone"
                   type="tel"
-                  defaultValue="+1 (555) 123-4567"
+                  defaultValue="+968 2400 0000"
                 />
               </div>
 
@@ -107,7 +107,7 @@ export default function SettingsAdminPage() {
                 <Textarea
                   id="description"
                   rows={3}
-                  defaultValue="Modern home services marketplace connecting customers with qualified technicians."
+                  defaultValue="Home services marketplace connecting customers across Oman with verified technicians."
                 />
               </div>
             </CardContent>
@@ -138,7 +138,7 @@ export default function SettingsAdminPage() {
                 </div>
 
                 <div className="grid gap-2">
-                  <Label htmlFor="min-booking">Minimum Booking Value ($)</Label>
+                  <Label htmlFor="min-booking">Minimum Booking Value (OMR)</Label>
                   <Input
                     id="min-booking"
                     type="number"
@@ -314,7 +314,7 @@ export default function SettingsAdminPage() {
                 <Input
                   id="admin-email"
                   type="email"
-                  defaultValue="admin@fixitnow.com"
+                  defaultValue="admin@fixup.om"
                 />
               </div>
               <Button variant="outline" className="w-full">

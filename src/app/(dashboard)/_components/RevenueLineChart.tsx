@@ -85,13 +85,13 @@ export default function RevenueLineChart() {
             <YAxis
               tickLine={false}
               axisLine={false}
-              tickFormatter={(value) => `$${value / 1000}k`}
+              tickFormatter={(value) => `OMR ${value / 1000}k`}
               className="text-xs"
             />
 
             <Tooltip
               formatter={(value) => [
-                `$${Number(value).toLocaleString()}`,
+                `OMR ${Number(value).toLocaleString()}`,
                 "Revenue",
               ]}
               contentStyle={{

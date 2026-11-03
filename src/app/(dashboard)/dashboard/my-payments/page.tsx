@@ -81,7 +81,7 @@ export default async function MyPayments() {
                       </TableCell>
 
                       <TableCell>
-                        {payment.currency} {payment.amount}
+                        OMR {payment.amount}
                       </TableCell>
 
                       <TableCell>

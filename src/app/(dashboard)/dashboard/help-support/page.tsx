@@ -89,12 +89,12 @@ const faqs = [
   {
     question: "How do I request a refund?",
     answer:
-      "Contact FixItNow support with your booking information and explain the reason for the refund request. Our support team will review your request according to the applicable refund policy.",
+      "Contact FIXUP Oman support with your booking information and explain the reason for the refund request. Our support team will review your request according to the applicable refund policy.",
   },
   {
     question: "What should I do if a technician does not arrive?",
     answer:
-      "First, check your booking details and scheduled time. If the technician does not arrive or you cannot contact them, contact FixItNow support so we can investigate the issue.",
+      "First, check your booking details and scheduled time. If the technician does not arrive or you cannot contact them, contact FIXUP Oman support so we can investigate the issue.",
   },
   {
     question: "Can I leave a review for my technician?",
@@ -340,7 +340,7 @@ export default function CustomerHelpSupportPage() {
                   </p>
 
                   <p className="text-xs text-muted-foreground">
-                    support@fixitnow.com
+                    support@fixup.om
                   </p>
                 </div>
               </Button>

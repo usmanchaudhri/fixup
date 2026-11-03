@@ -32,7 +32,7 @@ export default function PlatformStatistics() {
           </h2>
 
           <p className="mt-4 text-lg text-muted-foreground">
-            Our growing community continues to rely on FixItNow for fast,
+            Our growing community continues to rely on FIXUP Oman for fast,
             secure, and professional home services.
           </p>
         </div>

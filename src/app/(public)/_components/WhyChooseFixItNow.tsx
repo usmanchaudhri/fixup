@@ -23,7 +23,7 @@ export default function WhyChooseFixItNow() {
             variant="secondary"
             className="rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-primary"
           >
-            Why Choose FixItNow
+            Why Choose FIXUP Oman
           </Badge>
 
           <h2 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">

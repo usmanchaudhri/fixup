@@ -20,21 +20,21 @@ import { Progress } from "@/components/ui/progress";
 const stats = [
   {
     title: "Total Earnings",
-    value: "$54,280",
+    value: "OMR 54,280",
     icon: DollarSign,
     color: "text-green-600",
     description: "Lifetime earnings",
   },
   {
     title: "This Month",
-    value: "$12,540",
+    value: "OMR 12,540",
     icon: Calendar,
     color: "text-blue-600",
     description: "August earnings",
   },
   {
     title: "Pending Payout",
-    value: "$2,350",
+    value: "OMR 2,350",
     icon: Wallet,
     color: "text-orange-500",
     description: "Waiting for payout",
@@ -53,21 +53,21 @@ const recentTransactions = [
     id: "#BK-1032",
     customer: "John Doe",
     service: "AC Repair",
-    amount: "$1,500",
+    amount: "OMR 1,500",
     status: "Paid",
   },
   {
     id: "#BK-1031",
     customer: "Alex Smith",
     service: "Pipe Installation",
-    amount: "$2,200",
+    amount: "OMR 2,200",
     status: "Paid",
   },
   {
     id: "#BK-1028",
     customer: "Sarah Khan",
     service: "Electrical Repair",
-    amount: "$900",
+    amount: "OMR 900",
     status: "Pending",
   },
 ];
@@ -144,7 +144,7 @@ export default function EarningsPage() {
                 </div>
 
                 <p className="mt-3 text-3xl font-bold">
-                  $60,000
+                  OMR 60,000
                 </p>
               </div>
 
@@ -155,7 +155,7 @@ export default function EarningsPage() {
                 </div>
 
                 <p className="mt-3 text-3xl font-bold">
-                  $5,720
+                  OMR 5,720
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function EarningsPage() {
                   </p>
 
                   <p className="mt-2 text-4xl font-bold">
-                    $48,560
+                    OMR 48,560
                   </p>
                 </div>
 
@@ -236,7 +236,7 @@ export default function EarningsPage() {
               </p>
 
               <p className="mt-1 text-xl font-semibold">
-                $624
+                OMR 624
               </p>
             </div>
           </CardContent>

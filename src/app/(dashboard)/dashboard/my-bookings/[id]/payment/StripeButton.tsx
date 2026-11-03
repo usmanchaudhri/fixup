@@ -26,7 +26,7 @@
 //                 amount,
 //                 method: "CARD",
 //                 provider: "STRIPE",
-//                 currency: "USD",
+//                 currency: "OMR",
 //             });
 
 //             if (!result.success) {
@@ -113,7 +113,7 @@ export default function StripeButton({
                     amount,
                     method: "CARD",
                     provider: "STRIPE",
-                    currency: "USD",
+                    currency: "OMR",
                 });
 
                 if (!paymentResult.success) {

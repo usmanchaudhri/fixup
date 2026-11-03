@@ -15,7 +15,7 @@ export const faqs: FAQ[] = [
     id: "2",
     question: "Are all technicians verified?",
     answer:
-      "Yes. Every technician goes through a verification process before joining FixItNow. Customer ratings and reviews are also displayed to help you choose with confidence.",
+      "Yes. Every technician goes through a verification process before joining FIXUP Oman. Customer ratings and reviews are also displayed to help you choose with confidence.",
   },
   {
     id: "3",

@@ -50,7 +50,7 @@ const stats = [
   },
   {
     title: "Total Spent",
-    value: "$1,245",
+    value: "OMR 1,245",
     description: "Lifetime payments",
     icon: CreditCard,
   },

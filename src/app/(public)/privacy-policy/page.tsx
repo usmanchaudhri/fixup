@@ -186,7 +186,7 @@ export default function PrivacyPolicyPage() {
               "
             >
               Privacy
-              <span className="text-[#ff7308]"> Policy</span>
+              <span className="text-[#E6B000]"> Policy</span>
             </h1>
 
             <p
@@ -201,7 +201,7 @@ export default function PrivacyPolicyPage() {
               "
             >
               Your privacy matters to us. This Privacy Policy explains how
-              FixItNow collects, uses, protects, and handles information when
+              FIXUP Oman collects, uses, protects, and handles information when
               you use our platform.
             </p>
 
@@ -375,14 +375,14 @@ export default function PrivacyPolicyPage() {
 
                     <p className="mt-3 leading-7 text-muted-foreground">
                       This Privacy Policy describes how [Company Name]
-                      ("FixItNow", "we", "us", or "our") may collect and use
-                      information when you access or use the FixItNow website,
+                      ("FIXUP Oman", "we", "us", or "our") may collect and use
+                      information when you access or use the FIXUP Oman website,
                       application, and related services (collectively, the
                       "Platform").
                     </p>
 
                     <p className="mt-4 leading-7 text-muted-foreground">
-                      By using FixItNow, you acknowledge that you have read
+                      By using FIXUP Oman, you acknowledge that you have read
                       and understood this Privacy Policy. If you do not agree
                       with this policy, please do not use the Platform.
                     </p>
@@ -459,7 +459,7 @@ export default function PrivacyPolicyPage() {
 
                 <PolicyList
                   items={[
-                    "Creating and maintaining your FixItNow account.",
+                    "Creating and maintaining your FIXUP Oman account.",
                     "Providing, operating, and improving the Platform.",
                     "Connecting customers with service professionals.",
                     "Processing and managing service bookings.",
@@ -488,7 +488,7 @@ export default function PrivacyPolicyPage() {
 
                 <PolicyParagraph>
                   We do not sell your personal information as part of the
-                  normal operation of FixItNow. We may share information in
+                  normal operation of FIXUP Oman. We may share information in
                   limited circumstances necessary to operate the Platform,
                   provide services, or comply with legal obligations.
                 </PolicyParagraph>
@@ -498,7 +498,7 @@ export default function PrivacyPolicyPage() {
                 </PolicySubheading>
 
                 <PolicyParagraph>
-                  When you use FixItNow to request or provide a service,
+                  When you use FIXUP Oman to request or provide a service,
                   certain information may be visible to the other party when
                   necessary to facilitate the booking and completion of the
                   service.
@@ -541,7 +541,7 @@ export default function PrivacyPolicyPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow may use cookies and similar technologies to help
+                  FIXUP Oman may use cookies and similar technologies to help
                   operate the Platform, remember preferences, understand how
                   users interact with our services, and improve functionality.
                 </PolicyParagraph>
@@ -671,7 +671,7 @@ export default function PrivacyPolicyPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow may integrate with or rely on third-party services
+                  FIXUP Oman may integrate with or rely on third-party services
                   to provide certain functionality. These services may process
                   information according to their own privacy policies and terms.
                 </PolicyParagraph>
@@ -697,7 +697,7 @@ export default function PrivacyPolicyPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow is not intended for children who are not legally
+                  FIXUP Oman is not intended for children who are not legally
                   permitted to use the Platform under applicable law.
                 </PolicyParagraph>
 
@@ -754,7 +754,7 @@ export default function PrivacyPolicyPage() {
                 <PolicyParagraph>
                   If you have questions about this Privacy Policy, your
                   personal information, or our privacy practices, please
-                  contact FixItNow.
+                  contact FIXUP Oman.
                 </PolicyParagraph>
 
                 <Card className="mt-6 overflow-hidden border-orange-500/20">
@@ -793,7 +793,7 @@ export default function PrivacyPolicyPage() {
                       <Button
                         asChild
                         className="
-                          bg-[#ff7308]
+                          bg-[#E6B000]
                           text-white
                           hover:bg-[#e96500]
                         "
@@ -830,7 +830,7 @@ export default function PrivacyPolicyPage() {
                   not legal advice. Replace the placeholders with your actual
                   business information and have the policy reviewed by a
                   qualified legal professional to ensure it meets the
-                  requirements applicable to FixItNow and the locations in
+                  requirements applicable to FIXUP Oman and the locations in
                   which you operate.
                 </p>
               </div>
@@ -878,7 +878,7 @@ export default function PrivacyPolicyPage() {
 
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
             We're here to help. Reach out to our support team if you have
-            questions about how FixItNow handles your information.
+            questions about how FIXUP Oman handles your information.
           </p>
 
           <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
@@ -886,7 +886,7 @@ export default function PrivacyPolicyPage() {
               asChild
               size="lg"
               className="
-                bg-[#ff7308]
+                bg-[#E6B000]
                 text-white
                 hover:bg-[#e96500]
               "

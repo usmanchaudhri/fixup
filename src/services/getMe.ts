@@ -19,22 +19,27 @@ export const getMe = async ()=>{
         }
     }
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/me`, {
-        headers: {
-            // Authorization: `Bearer ${accessToken}`
-            // Authorization: `${accessToken}`
-            Cookie: `accessToken=${accessToken}`
-        },
-        cache: "force-cache",
-        next: {
-            revalidate: 60 * 60 * 24, //1 day
-            tags: ["my-profile"]
-        }
-        
-    });
+    try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/me`, {
+            headers: {
+                Cookie: `accessToken=${accessToken}`
+            },
+            cache: "no-store",
+        });
 
-    const result = res.json();
-    // console.log(result)
-    return result;
+        if (!res.ok) {
+            return {
+                success: false,
+                message: "User not logged in!"
+            }
+        }
+
+        return await res.json();
+    } catch {
+        return {
+            success: false,
+            message: "User not logged in!"
+        }
+    }
 
 }

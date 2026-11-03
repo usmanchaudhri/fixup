@@ -73,31 +73,25 @@
 
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
 
-
-const inter = Inter({ 
-  subsets: ['latin'], 
-  variable: '--font-sans' 
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "FixItNow",
-  description: "Your service booking platform",
+  title: {
+    default: "FIXUP Oman",
+    template: "%s",
+  },
+  description:
+    "Book verified technicians across Oman. Same-day AC, plumbing, electrical, and cleaning in Muscat and beyond.",
 };
 
 export default async function RootLayout({
@@ -111,12 +105,7 @@ export default async function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn(
-        "h-full antialiased",
-        geistSans.variable,
-        geistMono.variable,
-        inter.variable
-      )}
+      className={cn("h-full antialiased", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider

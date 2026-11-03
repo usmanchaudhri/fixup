@@ -154,7 +154,7 @@ export default async function MyBookings() {
                       </TableCell>
 
                       <TableCell>
-                        ${booking.service?.price || 0}
+                        OMR {booking.service?.price || 0}
                       </TableCell>
 
                       <TableCell>

@@ -55,7 +55,7 @@ export default function BecomeTechnician() {
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               Join hundreds of trusted professionals helping homeowners every
               day. Build your profile, manage your availability, receive
-              bookings, and grow your business with FixItNow.
+              bookings, and grow your business with FIXUP Oman.
             </p>
 
             {/* Benefits */}
@@ -130,7 +130,7 @@ export default function BecomeTechnician() {
                 </div>
 
                 <div>
-                  <p className="text-2xl font-bold">$3,200+</p>
+                  <p className="text-2xl font-bold">OMR 1,200+</p>
                   <p className="text-sm text-muted-foreground">
                     Monthly Earnings
                   </p>

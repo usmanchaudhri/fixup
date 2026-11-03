@@ -191,7 +191,7 @@ const SingleServiceByIdPage = async ({
                 </p>
 
                 <h2 className="text-4xl font-bold text-primary">
-                  ৳{data.price}
+                  OMR {data.price}
                 </h2>
 
                 <p className="text-muted-foreground">

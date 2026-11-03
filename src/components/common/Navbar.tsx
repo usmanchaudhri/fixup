@@ -5,7 +5,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, User, Settings, LogOut, Home, Search, Users, PlayCircle, LayoutDashboard, Contact } from 'lucide-react';
+import { Menu, User, Settings, LogOut, Search, Users, LayoutDashboard, Contact, MapPin } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -30,11 +30,10 @@ import SiteLogo from './SiteLogo';
 
 // Navigation items
 const navItems = [
-  { href: '/', label: 'Home', icon: Home },
   { href: '/services', label: 'Services', icon: Search },
-  { href: '/find-technicians', label: 'Find Technicians', icon: Users },
-  { href: '/how-it-works', label: 'How It Works', icon: PlayCircle },
-  { href: '/contact', label: 'Contact', icon: Contact},
+  { href: '/find-technicians', label: 'Technicians', icon: Users },
+  { href: '/#areas', label: 'Areas', icon: MapPin },
+  { href: '/contact', label: 'Contact', icon: Contact },
 ];
 
 type IUser = {
@@ -69,8 +68,21 @@ type NavbarProps = {
 export default function Navbar({ user }: NavbarProps) {
 
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
       const router = useRouter();
+
+  const go = (href: string) => {
+    setMenuOpen(false);
+    if (href.startsWith("/#")) {
+      const id = href.slice(2);
+      if (pathname === "/") {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
+    router.push(href);
+  };
 
   // login state from props
 const profile = user?.data?.profile;
@@ -107,32 +119,29 @@ const dashboardLink =
 };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <SiteLogo/>
-          {/* <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">F</span>
-            </div>
-            <span className="font-semibold text-xl tracking-tight">FixItNow</span>
-          </Link> */}
+    <nav className="sticky top-0 z-50 w-full bg-[var(--navy)] text-white shadow-md">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="flex h-20 items-center gap-3">
+          <SiteLogo onDark large />
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="flex min-w-0 flex-1 items-center justify-center gap-1">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    go(item.href);
+                  }}
                   className={cn(
-                    "flex items-center gap-2 text-sm font-medium transition-colors hover:text-foreground",
-                    isActive ? "text-primary" : "text-muted-foreground"
+                    "whitespace-nowrap rounded-full px-3 py-2 text-base font-medium transition-colors lg:px-4 lg:text-lg",
+                    isActive
+                      ? "bg-[var(--gold)] text-[var(--navy)]"
+                      : "text-white/80 hover:bg-white/10 hover:text-white"
                   )}
                 >
-                  <item.icon className="h-4 w-4" />
                   {item.label}
                 </Link>
               );
@@ -140,10 +149,10 @@ const dashboardLink =
           </div>
 
           {/* Right Side - Auth Section */}
-          <div className="flex items-center gap-3">
-
-            {/* === Theme Switcher (Dropdown) === */}
-            <ThemeSwitcher />
+          <div className="flex shrink-0 items-center gap-2">
+            <div className="text-white [&_button]:text-white [&_button:hover]:bg-white/10 [&_button:hover]:text-white">
+              <ThemeSwitcher />
+            </div>
 
             {isLoggedIn && profile ? (
               /* === Logged In: User Dropdown === */
@@ -196,30 +205,27 @@ const dashboardLink =
               </DropdownMenu>
             ) : (
               /* === Not Logged In: Login + Sign Up === */
-              <div className="hidden md:flex items-center gap-3">
-                <Button variant="ghost" asChild>
+              <div className="flex items-center gap-2">
+                <Button variant="ghost" className="h-11 px-4 text-lg text-white hover:bg-white/10 hover:text-white" asChild>
                   <Link href="/login">Login</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/register">Sign Up</Link>
+                <Button className="h-11 px-5 text-lg bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90" asChild>
+                  <Link href="/services">Book now</Link>
                 </Button>
               </div>
             )}
 
             {/* Mobile Menu */}
-            <Sheet>
-              <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon">
+            <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
+              <SheetTrigger asChild className="hidden">
+                <Button variant="ghost" size="icon" aria-label="Open menu">
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80">
+              <SheetContent side="right" className="w-80 border-none bg-[var(--navy)] text-white">
                 <div className="flex flex-col gap-6 pt-8">
-                  <div className="flex items-center gap-3 px-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                      <span className="text-lg font-bold text-primary-foreground">F</span>
-                    </div>
-                    <span className="font-semibold text-2xl">FixItNow</span>
+                  <div className="px-2">
+                    <SiteLogo onDark large />
                   </div>
 
                   {/* Nav Links */}
@@ -228,11 +234,15 @@ const dashboardLink =
                       <Link
                         key={item.href}
                         href={item.href}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          go(item.href);
+                        }}
                         className={cn(
-                          "flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors",
+                          "flex items-center gap-3 rounded-lg px-4 py-3 text-lg font-medium transition-colors",
                           pathname === item.href
-                            ? "bg-primary text-primary-foreground"
-                            : "hover:bg-muted"
+                            ? "bg-[var(--gold)] text-[var(--navy)]"
+                            : "text-white/85 hover:bg-white/10"
                         )}
                       >
                         <item.icon className="h-5 w-5" />
@@ -263,11 +273,11 @@ const dashboardLink =
                       </>
                     ) : (
                       <div className="flex flex-col gap-3 px-2">
-                        <Button variant="outline" asChild className="w-full">
+                        <Button variant="outline" asChild className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">
                           <Link href="/login">Login</Link>
                         </Button>
-                        <Button asChild className="w-full">
-                          <Link href="/register">Sign Up</Link>
+                        <Button asChild className="w-full bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90">
+                          <Link href="/services">Book now</Link>
                         </Button>
                       </div>
                     )}

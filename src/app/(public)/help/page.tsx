@@ -140,7 +140,7 @@ const faqs: FAQ[] = [
   {
     question: "What should I do if I have another problem?",
     answer:
-      "If you cannot find the answer in this Help Center, contact the FixItNow support team using the support options below.",
+      "If you cannot find the answer in this Help Center, contact the FIXUP Oman support team using the support options below.",
     category: "general",
   },
 ];
@@ -419,7 +419,7 @@ export default function HelpPage() {
               "
             >
               <CircleHelp className="mr-2 h-4 w-4" />
-              FixItNow Help Center
+              FIXUP Oman Help Center
             </Badge>
           </motion.div>
 
@@ -442,7 +442,7 @@ export default function HelpPage() {
             "
           >
             How can we
-            <span className="text-[#ff7308]"> help you?</span>
+            <span className="text-[#E6B000]"> help you?</span>
           </motion.h1>
 
           <motion.p
@@ -464,7 +464,7 @@ export default function HelpPage() {
             "
           >
             Find answers about bookings, payments, accounts, technicians,
-            and everything else you need to get the most from FixItNow.
+            and everything else you need to get the most from FIXUP Oman.
           </motion.p>
 
           {/* Search */}
@@ -710,7 +710,7 @@ export default function HelpPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-              Browse the most common questions from FixItNow customers
+              Browse the most common questions from FIXUP Oman customers
               and technicians.
             </p>
           </div>
@@ -765,7 +765,7 @@ export default function HelpPage() {
                     asChild
                     className="
                       mt-6
-                      bg-[#ff7308]
+                      bg-[#E6B000]
                       text-white
                       hover:bg-[#e96500]
                     "
@@ -1115,7 +1115,7 @@ export default function HelpPage() {
                 size="lg"
                 className="
                   h-12
-                  bg-[#ff7308]
+                  bg-[#E6B000]
                   px-7
                   text-white
                   shadow-lg

@@ -25,7 +25,7 @@ import {
 export const featuredServices: IFeaturedService[] = [
   {
     title: "Plumbing",
-    price: "$25",
+    price: "OMR 8",
     rating: 4.9,
     reviews: 324,
     icon: Wrench,
@@ -36,7 +36,7 @@ export const featuredServices: IFeaturedService[] = [
   },
   {
     title: "Electrical",
-    price: "$35",
+    price: "OMR 12",
     rating: 4.8,
     reviews: 241,
     icon: Zap,
@@ -47,7 +47,7 @@ export const featuredServices: IFeaturedService[] = [
   },
   {
     title: "Cleaning",
-    price: "$20",
+    price: "OMR 7",
     rating: 5,
     reviews: 502,
     icon: Sparkles,
@@ -58,7 +58,7 @@ export const featuredServices: IFeaturedService[] = [
   },
   {
     title: "Painting",
-    price: "$40",
+    price: "OMR 15",
     rating: 4.9,
     reviews: 168,
     icon: Paintbrush,
@@ -69,7 +69,7 @@ export const featuredServices: IFeaturedService[] = [
   },
   {
     title: "AC Repair",
-    price: "$45",
+    price: "OMR 12",
     rating: 4.8,
     reviews: 212,
     icon: Fan,
@@ -80,7 +80,7 @@ export const featuredServices: IFeaturedService[] = [
   },
   {
     title: "Carpentry",
-    price: "$30",
+    price: "OMR 10",
     rating: 4.9,
     reviews: 196,
     icon: Hammer,

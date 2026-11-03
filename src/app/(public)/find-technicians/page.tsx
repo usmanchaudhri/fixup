@@ -126,7 +126,7 @@ export default async function FindTechniciansPage({
                   <div className="mt-1 flex items-center justify-center gap-1 text-xs text-muted-foreground">
                     <MapPin className="h-3 w-3" />
                     <span className="truncate">
-                      {profile.city || "Bangladesh"}
+                      {profile.city || "Oman"}
                     </span>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default async function FindTechniciansPage({
                     <Wallet className="mx-auto mb-1 h-4 w-4 text-primary" />
 
                     <p className="text-sm font-semibold">
-                      ৳{profile.hourlyRate ?? 0}
+                      OMR {profile.hourlyRate ?? 0}
                     </p>
 
                     <p className="text-[11px] text-muted-foreground">

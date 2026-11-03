@@ -97,7 +97,7 @@
 //                             <div className="text-right">
 //                                 <p className="text-sm text-muted-foreground">Hourly Rate</p>
 //                                 <p className="text-2xl font-bold text-primary">
-//                                     ${tech.hourlyRate}
+//                                     OMR {tech.hourlyRate}
 //                                 </p>
 //                             </div>
 //                         </div>
@@ -373,7 +373,7 @@ export default async function TechnicianProfilePage() {
                                         Hourly Rate
                                     </p>
                                     <p className="text-2xl font-bold text-primary">
-                                        ${tech.hourlyRate}
+                                        OMR {tech.hourlyRate}
                                     </p>
                                 </div>
 

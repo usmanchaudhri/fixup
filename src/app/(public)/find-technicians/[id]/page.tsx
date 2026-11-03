@@ -417,7 +417,7 @@ export default async function TechnicianDetailsPage({
 
               <h3 className="text-4xl font-bold text-primary">
                 {profile.hourlyRate
-                  ? `$${profile.hourlyRate}/hr`
+                  ? `OMR ${profile.hourlyRate}/hr`
                   : "Not Set"}
               </h3>
             </CardContent>

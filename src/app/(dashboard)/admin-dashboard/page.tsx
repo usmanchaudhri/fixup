@@ -93,7 +93,7 @@ export default function AdminDashboardHome() {
               <p className="text-sm text-muted-foreground">
                 Total Revenue
               </p>
-              <h2 className="text-3xl font-bold">$15,420</h2>
+              <h2 className="text-3xl font-bold">OMR 15,420</h2>
             </div>
 
             <DollarSign className="h-10 w-10 text-primary" />

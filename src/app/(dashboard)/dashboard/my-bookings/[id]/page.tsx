@@ -153,7 +153,7 @@ export default async function SingleBookingPage({
           </div>
 
           <div className="text-2xl font-bold text-primary">
-            ৳ {booking.service.price}
+            OMR {booking.service.price}
           </div>
         </CardContent>
       </Card>

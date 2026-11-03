@@ -23,6 +23,7 @@ export const companyLinks: FooterLink[] = [
   { label: "Our Services", href: "/services" },
   { label: "Find Technicians", href: "/find-technicians" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Service Areas", href: "/#areas" },
 ];
 
 export const supportLinks: FooterLink[] = [

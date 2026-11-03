@@ -46,7 +46,7 @@ export default function AnalyticsAdminPage() {
     },
     {
       title: "Platform Revenue",
-      value: "$48,290",
+      value: "OMR 48,290",
       change: "-2.4%",
       trend: "down",
       icon: DollarSign,
@@ -55,11 +55,11 @@ export default function AnalyticsAdminPage() {
   ]
 
   const topServices = [
-    { name: "Plumbing", bookings: 842, revenue: "$12,450" },
-    { name: "Electrical", bookings: 721, revenue: "$11,280" },
-    { name: "HVAC", bookings: 598, revenue: "$9,870" },
-    { name: "Cleaning", bookings: 534, revenue: "$6,420" },
-    { name: "Painting", bookings: 412, revenue: "$5,890" },
+    { name: "Plumbing", bookings: 842, revenue: "OMR 12,450" },
+    { name: "Electrical", bookings: 721, revenue: "OMR 11,280" },
+    { name: "HVAC", bookings: 598, revenue: "OMR 9,870" },
+    { name: "Cleaning", bookings: 534, revenue: "OMR 6,420" },
+    { name: "Painting", bookings: 412, revenue: "OMR 5,890" },
   ]
 
   return (
@@ -68,7 +68,7 @@ export default function AnalyticsAdminPage() {
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold tracking-tight">Analytics</h1>
         <p className="text-muted-foreground">
-          Platform performance overview for FixItNow
+          Platform performance overview for FIXUP Oman
         </p>
       </div>
 

@@ -1,4 +1,5 @@
 import { Clock3, Mail, MapPin, Phone } from "lucide-react";
+import { brand } from "@/lib/brand";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,26 +11,26 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+880 1234-567890",
-    description: "Mon - Sat, 9:00 AM - 6:00 PM",
+    value: brand.phoneDisplay,
+    description: brand.emergency,
   },
   {
     icon: Mail,
     title: "Email",
-    value: "support@fixitnow.com",
+    value: brand.email,
     description: "We'll respond within 24 hours",
   },
   {
     icon: MapPin,
     title: "Office",
-    value: "Dhaka, Bangladesh",
-    description: "Visit us during business hours",
+    value: brand.address,
+    description: "Serving homes across Oman",
   },
   {
     icon: Clock3,
     title: "Working Hours",
-    value: "9:00 AM - 6:00 PM",
-    description: "Sunday - Thursday",
+    value: brand.hours,
+    description: "Emergency call-outs available overnight",
   },
 ];
 

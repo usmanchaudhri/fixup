@@ -255,7 +255,7 @@ export default function AboutPage() {
                 "
               >
                 <Sparkles className="mr-2 h-4 w-4" />
-                About FixItNow
+                About FIXUP Oman
               </Badge>
             </motion.div>
 
@@ -281,7 +281,7 @@ export default function AboutPage() {
               "
             >
               Making Home Services
-              <span className="block text-[#ff7308]">
+              <span className="block text-[#E6B000]">
                 Simple & Reliable.
               </span>
             </motion.h1>
@@ -307,7 +307,7 @@ export default function AboutPage() {
                 sm:leading-8
               "
             >
-              FixItNow connects customers with skilled home-service
+              FIXUP Oman connects customers with skilled home-service
               professionals, making it easier to discover, compare, schedule,
               and book the help they need.
             </motion.p>
@@ -338,7 +338,7 @@ export default function AboutPage() {
                 className="
                   h-12
                   w-full
-                  bg-[#ff7308]
+                  bg-[#E6B000]
                   px-7
                   text-white
                   shadow-lg
@@ -484,12 +484,12 @@ export default function AboutPage() {
                 "
               >
                 Your home deserves
-                <span className="text-[#ff7308]"> better service.</span>
+                <span className="text-[#E6B000]"> better service.</span>
               </h2>
 
               <p className="mt-6 leading-7 text-muted-foreground">
                 Finding reliable help for your home should not be complicated.
-                FixItNow brings customers and professionals together through
+                FIXUP Oman brings customers and professionals together through
                 one simple platform.
               </p>
 
@@ -554,7 +554,7 @@ export default function AboutPage() {
                   <div className="mb-8 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-muted-foreground">
-                        FixItNow
+                        FIXUP Oman
                       </p>
 
                       <p className="mt-1 text-xl font-bold">
@@ -689,11 +689,11 @@ export default function AboutPage() {
 
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               From problem to solution,
-              <span className="text-[#ff7308]"> made simple.</span>
+              <span className="text-[#E6B000]"> made simple.</span>
             </h2>
 
             <p className="mt-4 text-muted-foreground">
-              FixItNow removes the complexity from finding and booking home
+              FIXUP Oman removes the complexity from finding and booking home
               services.
             </p>
           </div>
@@ -784,12 +784,12 @@ export default function AboutPage() {
                 dark:text-orange-400
               "
             >
-              Why FixItNow?
+              Why FIXUP Oman?
             </Badge>
 
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Built around
-              <span className="text-[#ff7308]"> trust and convenience.</span>
+              <span className="text-[#E6B000]"> trust and convenience.</span>
             </h2>
           </div>
 
@@ -805,7 +805,7 @@ export default function AboutPage() {
                 icon: Zap,
                 title: "Simple Experience",
                 description:
-                  "From searching for a service to scheduling a technician, FixItNow keeps the experience straightforward.",
+                  "From searching for a service to scheduling a technician, FIXUP Oman keeps the experience straightforward.",
               },
               {
                 icon: Clock3,
@@ -941,7 +941,7 @@ export default function AboutPage() {
                     asChild
                     className="
                       mt-8
-                      bg-[#ff7308]
+                      bg-[#E6B000]
                       text-white
                       hover:bg-[#e96500]
                     "
@@ -995,7 +995,7 @@ export default function AboutPage() {
                   </div>
 
                   <p className="mt-6 leading-7 text-muted-foreground">
-                    FixItNow gives skilled professionals a place to showcase
+                    FIXUP Oman gives skilled professionals a place to showcase
                     their expertise, manage availability, and connect with
                     customers who need their services.
                   </p>
@@ -1110,7 +1110,7 @@ export default function AboutPage() {
               "
             >
               <Sparkles className="mr-2 h-4 w-4" />
-              Get Started With FixItNow
+              Get Started With FIXUP Oman
             </Badge>
 
             <h2
@@ -1123,7 +1123,7 @@ export default function AboutPage() {
               "
             >
               Your next home project
-              <span className="block text-[#ff7308]">
+              <span className="block text-[#E6B000]">
                 starts here.
               </span>
             </h2>
@@ -1138,7 +1138,7 @@ export default function AboutPage() {
               "
             >
               Find the service you need, connect with a professional, and get
-              your home project moving with FixItNow.
+              your home project moving with FIXUP Oman.
             </p>
 
             <div
@@ -1156,7 +1156,7 @@ export default function AboutPage() {
                 size="lg"
                 className="
                   h-12
-                  bg-[#ff7308]
+                  bg-[#E6B000]
                   px-7
                   text-white
                   shadow-lg

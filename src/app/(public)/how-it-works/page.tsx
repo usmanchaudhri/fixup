@@ -69,7 +69,7 @@ export default function HowItWorks() {
           </div>
 
           <h1 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            How <span className="text-primary">FixItNow</span> Works
+            How <span className="text-primary">FIXUP Oman</span> Works
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-muted-foreground text-lg">
@@ -129,7 +129,7 @@ export default function HowItWorks() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-3xl font-bold">
-              Why Choose FixItNow?
+              Why Choose FIXUP Oman?
             </h2>
 
             <p className="mt-3 text-muted-foreground">
@@ -177,7 +177,7 @@ export default function HowItWorks() {
 
               <p className="mt-3 max-w-2xl text-primary-foreground/90">
                 Whether you need an electrician, plumber, AC technician, or any
-                other home service expert, FixItNow connects you with trusted
+                other home service expert, FIXUP Oman connects you with trusted
                 professionals in minutes.
               </p>
             </div>

@@ -110,7 +110,7 @@ export default function CustomerSettingsPage() {
                 <CardTitle>Personal Information</CardTitle>
 
                 <CardDescription>
-                  Update the information associated with your FixItNow
+                  Update the information associated with your FIXUP Oman
                   account.
                 </CardDescription>
               </CardHeader>
@@ -233,7 +233,7 @@ export default function CustomerSettingsPage() {
 
                     <Input
                       id="city"
-                      placeholder="Dhaka"
+                      placeholder="Muscat"
                     />
                   </div>
 
@@ -244,7 +244,7 @@ export default function CustomerSettingsPage() {
 
                     <Input
                       id="district"
-                      placeholder="Dhaka"
+                      placeholder="Muscat"
                     />
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export default function CustomerSettingsPage() {
 
                 <CardDescription>
                   Choose which notifications you want to receive from
-                  FixItNow.
+                  FIXUP Oman.
                 </CardDescription>
               </CardHeader>
 
@@ -533,7 +533,7 @@ export default function CustomerSettingsPage() {
                 </CardTitle>
 
                 <CardDescription>
-                  Permanently remove your FixItNow account and associated
+                  Permanently remove your FIXUP Oman account and associated
                   data.
                 </CardDescription>
               </CardHeader>

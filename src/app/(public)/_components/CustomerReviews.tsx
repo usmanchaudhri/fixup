@@ -41,7 +41,7 @@ export default function CustomerReviews() {
           </h2>
 
           <p className="mt-4 text-lg text-muted-foreground">
-            Discover why homeowners trust FixItNow for fast, reliable, and
+            Discover why homeowners trust FIXUP Oman for fast, reliable, and
             professional home services.
           </p>
         </div>

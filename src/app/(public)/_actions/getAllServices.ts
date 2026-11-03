@@ -106,18 +106,27 @@ export const getAllServicesss = async ({
     params.set("limit", limit);
   }
 
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/services?${params.toString()}`,
-    {
-      cache: "no-store",
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/services?${params.toString()}`,
+      {
+        cache: "no-store",
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch services");
     }
-  );
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch services");
+    return await res.json();
+  } catch (error) {
+    console.error("Get Services Error:", error);
+
+    return {
+      success: false,
+      message: "Failed to fetch services",
+      data: [],
+      meta: { page: 1, limit: 10, total: 0, totalPage: 0 },
+    };
   }
-
-  const result = await res.json();
-
-  return result;
 };

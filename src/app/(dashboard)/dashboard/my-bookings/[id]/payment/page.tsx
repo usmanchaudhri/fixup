@@ -215,7 +215,7 @@ export default async function PaymentPage({
                                 <span>Total Amount</span>
 
                                 <span className="text-primary">
-                                    $ {booking.service.price}
+                                    OMR {booking.service.price}
                                 </span>
                             </div>
                         </CardContent>

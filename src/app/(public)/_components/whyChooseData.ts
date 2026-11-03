@@ -28,7 +28,7 @@ export const whyChooseItems: WhyChooseItem[] = [
     id: 2,
     title: "Fast Booking",
     description:
-      "Book trusted home service professionals within minutes.",
+      "Same-day slots across Muscat, booked in a few minutes.",
     icon: Clock3,
   },
   {

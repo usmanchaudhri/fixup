@@ -7,7 +7,18 @@ import { GetNewAccessToken } from './services/refreshToken';
 
 
 const AUTH_ROUTES =["/login", "/register"]
-const PUBLIC_ROUTES = ["/", "/browse-services", "/find-technicians", "/how-it-works"]
+const PUBLIC_ROUTES = [
+  "/",
+  "/services",
+  "/find-technicians",
+  "/how-it-works",
+  "/contact",
+  "/about",
+  "/help",
+  "/privacy-policy",
+  "/terms",
+  "/cookies",
+]
 // This function can be marked `async` if using `await` inside
 export async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname; 
@@ -95,6 +106,6 @@ return NextResponse.next();
 export const config = {
     matcher: [
     // Exclude API routes, static files, image optimizations, and .png files
-    '/((?!api|_next/static|favicon.ico|_next/image|.*\\.png$).*)',
+        '/((?!api|_next/static|favicon.ico|_next/image|.*\\.(?:png|jpg|jpeg|webp|svg|mp4|ico)$).*)',
   ],
 }

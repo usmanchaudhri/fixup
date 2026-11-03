@@ -169,7 +169,7 @@ export default function ServiceFilter({
             <Input
               id="city"
               defaultValue={getValue("city")}
-              placeholder="e.g. Dhaka"
+              placeholder="e.g. Muscat"
               onKeyDown={(event) => {
                 if (event.key === "Enter") {
                   updateFilter(

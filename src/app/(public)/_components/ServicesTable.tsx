@@ -129,7 +129,7 @@ export function ServicesTable({ data }: ServicesTableProps) {
               {/* Price */}
               <TableCell>
                 <div className="font-medium">
-                  ${service.price}
+                  OMR {service.price}
                   <span className="ml-1 text-xs text-muted-foreground">
                     / {service.priceType.toLowerCase()}
                   </span>

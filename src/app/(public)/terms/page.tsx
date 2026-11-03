@@ -33,7 +33,7 @@ const sections = [
   },
   {
     id: "about-platform",
-    title: "About FixItNow",
+    title: "About FIXUP Oman",
   },
   {
     id: "eligibility",
@@ -110,7 +110,7 @@ const highlights = [
     icon: Users,
     title: "Two-Sided Marketplace",
     description:
-      "FixItNow connects customers with independent service professionals.",
+      "FIXUP Oman connects customers with independent service professionals.",
   },
   {
     icon: ShieldCheck,
@@ -122,7 +122,7 @@ const highlights = [
     icon: FileCheck,
     title: "Clear Expectations",
     description:
-      "These terms explain the rules that apply when using the FixItNow platform.",
+      "These terms explain the rules that apply when using the FIXUP Oman platform.",
   },
 ];
 
@@ -221,7 +221,7 @@ export default function TermsPage() {
               "
             >
               Terms &
-              <span className="text-[#ff7308]">
+              <span className="text-[#E6B000]">
                 {" "}
                 Conditions
               </span>
@@ -239,7 +239,7 @@ export default function TermsPage() {
               "
             >
               These Terms & Conditions explain the rules and responsibilities
-              that apply when you use FixItNow to discover, book, provide, or
+              that apply when you use FIXUP Oman to discover, book, provide, or
               manage home services.
             </p>
 
@@ -408,14 +408,14 @@ export default function TermsPage() {
 
                     <p className="mt-3 leading-7 text-muted-foreground">
                       These Terms & Conditions ("Terms") form an agreement
-                      between you and [Company Name] ("FixItNow", "we", "us",
-                      or "our") regarding your use of the FixItNow website,
+                      between you and [Company Name] ("FIXUP Oman", "we", "us",
+                      or "our") regarding your use of the FIXUP Oman website,
                       application, marketplace, and related services.
                     </p>
 
                     <p className="mt-4 leading-7 text-muted-foreground">
                       By creating an account, accessing the Platform, or using
-                      any FixItNow service, you agree to be bound by these
+                      any FIXUP Oman service, you agree to be bound by these
                       Terms and any applicable policies referenced in them.
                     </p>
                   </div>
@@ -436,7 +436,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  By accessing or using FixItNow, you confirm that you have
+                  By accessing or using FIXUP Oman, you confirm that you have
                   read, understood, and agree to these Terms.
                 </PolicyParagraph>
 
@@ -463,23 +463,23 @@ export default function TermsPage() {
               >
                 <SectionHeading
                   number="02"
-                  title="About FixItNow"
+                  title="About FIXUP Oman"
                 />
 
                 <PolicyParagraph>
-                  FixItNow is a home-services marketplace designed to connect
+                  FIXUP Oman is a home-services marketplace designed to connect
                   customers with service professionals.
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  Customers may use FixItNow to discover services, review
+                  Customers may use FIXUP Oman to discover services, review
                   technician profiles, select available time slots, submit
                   bookings, communicate relevant information, and manage their
                   service requests.
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  Technicians may use FixItNow to create professional profiles,
+                  Technicians may use FIXUP Oman to create professional profiles,
                   list services, manage availability, receive booking
                   requests, and interact with customers.
                 </PolicyParagraph>
@@ -499,13 +499,13 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  You may use FixItNow only if you are legally permitted to
+                  You may use FIXUP Oman only if you are legally permitted to
                   enter into these Terms and use the Platform under applicable
                   law.
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  If you use FixItNow on behalf of a business or organization,
+                  If you use FIXUP Oman on behalf of a business or organization,
                   you represent that you have authority to bind that entity to
                   these Terms.
                 </PolicyParagraph>
@@ -531,7 +531,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  Some FixItNow features require you to create an account. You
+                  Some FIXUP Oman features require you to create an account. You
                   agree to provide accurate, current, and complete information
                   when creating and maintaining your account.
                 </PolicyParagraph>
@@ -651,7 +651,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow allows customers to request and book services from
+                  FIXUP Oman allows customers to request and book services from
                   available technicians. A booking may be subject to
                   confirmation, availability, payment requirements, or other
                   conditions shown during the booking process.
@@ -704,7 +704,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  Certain FixItNow services may require payment through the
+                  Certain FIXUP Oman services may require payment through the
                   payment methods made available on the Platform.
                 </PolicyParagraph>
 
@@ -719,7 +719,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow may change applicable fees or payment methods from
+                  FIXUP Oman may change applicable fees or payment methods from
                   time to time. Any applicable amount should be reviewed before
                   completing a transaction.
                 </PolicyParagraph>
@@ -790,7 +790,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow may allow users to submit ratings, reviews, comments,
+                  FIXUP Oman may allow users to submit ratings, reviews, comments,
                   or feedback about services and experiences.
                 </PolicyParagraph>
 
@@ -805,7 +805,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow may remove or restrict content that violates these
+                  FIXUP Oman may remove or restrict content that violates these
                   Terms or applicable policies.
                 </PolicyParagraph>
               </section>
@@ -830,7 +830,7 @@ export default function TermsPage() {
 
                 <PolicyList
                   items={[
-                    "Use FixItNow for unlawful activities.",
+                    "Use FIXUP Oman for unlawful activities.",
                     "Provide false, misleading, or fraudulent information.",
                     "Impersonate another person or business.",
                     "Attempt to access another user's account.",
@@ -840,7 +840,7 @@ export default function TermsPage() {
                     "Harass, threaten, abuse, or discriminate against other users.",
                     "Manipulate ratings, reviews, bookings, or other Platform activity.",
                     "Circumvent Platform security or access restrictions.",
-                    "Use FixItNow to facilitate prohibited or unsafe services.",
+                    "Use FIXUP Oman to facilitate prohibited or unsafe services.",
                   ]}
                 />
 
@@ -880,12 +880,12 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  FixItNow operates as a marketplace platform that helps
+                  FIXUP Oman operates as a marketplace platform that helps
                   customers and technicians connect.
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  Unless explicitly stated otherwise, FixItNow is not the
+                  Unless explicitly stated otherwise, FIXUP Oman is not the
                   employer, contractor, agent, or representative of technicians
                   using the Platform.
                 </PolicyParagraph>
@@ -897,7 +897,7 @@ export default function TermsPage() {
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  FixItNow does not necessarily directly provide the home
+                  FIXUP Oman does not necessarily directly provide the home
                   services listed by independent technicians.
                 </PolicyParagraph>
               </section>
@@ -916,7 +916,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  The FixItNow Platform, including its software, design,
+                  The FIXUP Oman Platform, including its software, design,
                   branding, logos, text, graphics, interfaces, and other
                   materials, may be protected by intellectual property laws.
                 </PolicyParagraph>
@@ -934,7 +934,7 @@ export default function TermsPage() {
 
                 <PolicyParagraph>
                   You retain ownership of content you submit where applicable.
-                  By submitting content to FixItNow, you grant us the rights
+                  By submitting content to FIXUP Oman, you grant us the rights
                   reasonably necessary to host, display, process, and operate
                   the Platform using that content.
                 </PolicyParagraph>
@@ -954,7 +954,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  To the maximum extent permitted by applicable law, FixItNow
+                  To the maximum extent permitted by applicable law, FIXUP Oman
                   provides the Platform on an "as available" basis and does not
                   guarantee that the Platform will always be uninterrupted,
                   error-free, secure, or available.
@@ -991,7 +991,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  To the maximum extent permitted by applicable law, FixItNow
+                  To the maximum extent permitted by applicable law, FIXUP Oman
                   and its affiliates, officers, employees, agents, and service
                   providers will not be responsible for indirect, incidental,
                   special, consequential, exemplary, or punitive damages
@@ -1026,7 +1026,7 @@ export default function TermsPage() {
                 />
 
                 <PolicyParagraph>
-                  You may stop using FixItNow at any time and may request
+                  You may stop using FIXUP Oman at any time and may request
                   account closure where such functionality is available.
                 </PolicyParagraph>
 
@@ -1073,7 +1073,7 @@ export default function TermsPage() {
                 </PolicyParagraph>
 
                 <PolicyParagraph>
-                  Your continued use of FixItNow after updated Terms become
+                  Your continued use of FIXUP Oman after updated Terms become
                   effective constitutes acceptance of the revised Terms to the
                   extent permitted by applicable law.
                 </PolicyParagraph>
@@ -1094,7 +1094,7 @@ export default function TermsPage() {
 
                 <PolicyParagraph>
                   If you have questions about these Terms, your account,
-                  bookings, or the FixItNow Platform, please contact us.
+                  bookings, or the FIXUP Oman Platform, please contact us.
                 </PolicyParagraph>
 
                 <Card className="mt-6 overflow-hidden border-orange-500/20">
@@ -1133,7 +1133,7 @@ export default function TermsPage() {
                       <Button
                         asChild
                         className="
-                          bg-[#ff7308]
+                          bg-[#E6B000]
                           text-white
                           hover:bg-[#e96500]
                         "
@@ -1167,10 +1167,10 @@ export default function TermsPage() {
                     Important:
                   </strong>{" "}
                   This Terms & Conditions page is a general product template
-                  for FixItNow and is not legal advice. Replace placeholders
+                  for FIXUP Oman and is not legal advice. Replace placeholders
                   with your actual company information and have the final
                   Terms reviewed by a qualified legal professional for the
-                  jurisdictions where FixItNow operates.
+                  jurisdictions where FIXUP Oman operates.
                 </p>
               </div>
             </article>
@@ -1217,7 +1217,7 @@ export default function TermsPage() {
 
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
             If something in these Terms is unclear, our support team can help
-            you understand how FixItNow works.
+            you understand how FIXUP Oman works.
           </p>
 
           <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
@@ -1225,7 +1225,7 @@ export default function TermsPage() {
               asChild
               size="lg"
               className="
-                bg-[#ff7308]
+                bg-[#E6B000]
                 text-white
                 hover:bg-[#e96500]
               "

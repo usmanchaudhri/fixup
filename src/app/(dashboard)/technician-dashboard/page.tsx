@@ -62,7 +62,7 @@ const stats = [
   },
   {
     title: "Total Earnings",
-    value: "$5,820",
+    value: "OMR 5,820",
     icon: DollarSign,
     description: "Lifetime earnings",
   },

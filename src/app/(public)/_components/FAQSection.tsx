@@ -46,7 +46,7 @@ export default function FAQSection() {
 
           <p className="mt-5 text-lg text-muted-foreground">
             Everything you need to know about booking services, payments,
-            technicians, and how FixItNow works.
+            technicians, and how FIXUP Oman works.
           </p>
         </motion.div>
 

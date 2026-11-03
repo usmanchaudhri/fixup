@@ -13,9 +13,9 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
-  title: "Cookie Policy | FixItNow",
+  title: "Cookie Policy | FIXUP Oman",
   description:
-    "Learn how FixItNow uses cookies and similar technologies to provide, secure, and improve our home services marketplace.",
+    "Learn how FIXUP Oman uses cookies and similar technologies to provide, secure, and improve our home services marketplace.",
 };
 
 
@@ -26,7 +26,7 @@ const cookieTypes = [
     title: "Essential Cookies",
     icon: ShieldCheck,
     description:
-      "These cookies are necessary for FixItNow to function properly and cannot normally be disabled.",
+      "These cookies are necessary for FIXUP Oman to function properly and cannot normally be disabled.",
     items: [
       "Maintain your login session",
       "Authenticate users",
@@ -40,7 +40,7 @@ const cookieTypes = [
     title: "Functional Cookies",
     icon: Settings2,
     description:
-      "These cookies help FixItNow remember preferences and provide a more convenient experience.",
+      "These cookies help FIXUP Oman remember preferences and provide a more convenient experience.",
     items: [
       "Remember user preferences",
       "Maintain interface settings",
@@ -52,7 +52,7 @@ const cookieTypes = [
     title: "Security Cookies",
     icon: LockKeyhole,
     description:
-      "These cookies and similar technologies help protect FixItNow and its users from security threats.",
+      "These cookies and similar technologies help protect FIXUP Oman and its users from security threats.",
     items: [
       "Detect suspicious activity",
       "Prevent unauthorized account access",
@@ -65,7 +65,7 @@ const cookieTypes = [
     title: "Analytics Cookies",
     icon: Cookie,
     description:
-      "When analytics services are enabled, these cookies help us understand how users interact with FixItNow.",
+      "When analytics services are enabled, these cookies help us understand how users interact with FIXUP Oman.",
     items: [
       "Understand which pages are visited",
       "Measure feature usage",
@@ -87,7 +87,7 @@ export default function CookiesPage() {
             className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to FixItNow
+            Back to FIXUP Oman
           </Link>
 
           <div className="flex flex-col gap-5">
@@ -108,7 +108,7 @@ export default function CookiesPage() {
               </h1>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-                This Cookie Policy explains how FixItNow uses cookies and
+                This Cookie Policy explains how FIXUP Oman uses cookies and
                 similar technologies to provide, secure, and improve our home
                 services marketplace.
               </p>
@@ -163,7 +163,7 @@ export default function CookiesPage() {
                   <strong className="text-foreground">
                     First-party cookies
                   </strong>{" "}
-                  — placed directly by FixItNow.
+                  — placed directly by FIXUP Oman.
                 </li>
 
                 <li>
@@ -181,11 +181,11 @@ export default function CookiesPage() {
           {/* How We Use Cookies */}
           <section>
             <h2 className="text-2xl font-bold tracking-tight">
-              2. How FixItNow Uses Cookies
+              2. How FIXUP Oman Uses Cookies
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-muted-foreground sm:text-base">
-              FixItNow may use cookies and similar technologies for several
+              FIXUP Oman may use cookies and similar technologies for several
               purposes, including authentication, security, functionality,
               analytics, and third-party integrations.
             </p>
@@ -239,14 +239,14 @@ export default function CookiesPage() {
 
             <div className="mt-4 space-y-4 text-sm leading-7 text-muted-foreground sm:text-base">
               <p>
-                When you sign in to FixItNow, we may store authentication
+                When you sign in to FIXUP Oman, we may store authentication
                 information in cookies so that you do not need to authenticate
                 on every page.
               </p>
 
               <p>
                 Authentication cookies help maintain your authenticated
-                session and protect access to your FixItNow account.
+                session and protect access to your FIXUP Oman account.
               </p>
 
               <p>
@@ -285,7 +285,7 @@ export default function CookiesPage() {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-muted-foreground sm:text-base">
-              Depending on the features enabled on FixItNow, cookies may
+              Depending on the features enabled on FIXUP Oman, cookies may
               generally fall into the following categories.
             </p>
 
@@ -369,7 +369,7 @@ export default function CookiesPage() {
             </div>
 
             <p className="mt-4 text-sm leading-6 text-muted-foreground">
-              The specific cookies used by FixItNow may change as we add,
+              The specific cookies used by FIXUP Oman may change as we add,
               remove, or update features.
             </p>
           </section>
@@ -404,7 +404,7 @@ export default function CookiesPage() {
                 </p>
 
                 <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  Disabling essential cookies may cause some FixItNow
+                  Disabling essential cookies may cause some FIXUP Oman
                   features to stop working properly.
                 </p>
               </div>
@@ -421,7 +421,7 @@ export default function CookiesPage() {
 
             <div className="mt-4 space-y-4 text-sm leading-7 text-muted-foreground sm:text-base">
               <p>
-                FixItNow may integrate third-party services to provide certain
+                FIXUP Oman may integrate third-party services to provide certain
                 functionality.
               </p>
 
@@ -457,7 +457,7 @@ export default function CookiesPage() {
               </p>
 
               <p>
-                Depending on how FixItNow is configured, information associated
+                Depending on how FIXUP Oman is configured, information associated
                 with cookies may include:
               </p>
 
@@ -527,7 +527,7 @@ export default function CookiesPage() {
             <div className="mt-4 space-y-4 text-sm leading-7 text-muted-foreground sm:text-base">
               <p>
                 We may update this Cookie Policy from time to time to reflect
-                changes to FixItNow, new technologies, third-party services,
+                changes to FIXUP Oman, new technologies, third-party services,
                 legal requirements, or improvements to our security practices.
               </p>
 
@@ -551,13 +551,13 @@ export default function CookiesPage() {
 
             <div className="mt-4 rounded-2xl border bg-muted/30 p-6">
               <p className="text-sm leading-7 text-muted-foreground sm:text-base">
-                If you have questions about this Cookie Policy or how FixItNow
+                If you have questions about this Cookie Policy or how FIXUP Oman
                 uses cookies, please contact us through the support channels
-                provided on the FixItNow platform.
+                provided on the FIXUP Oman platform.
               </p>
 
               <div className="mt-5">
-                <p className="font-semibold">FixItNow</p>
+                <p className="font-semibold">FIXUP Oman</p>
                 <p className="text-sm text-muted-foreground">
                   Home Services Marketplace
                 </p>

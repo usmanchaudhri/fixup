@@ -59,7 +59,7 @@
 //   },
 //   {
 //     title: "Total Earnings",
-//     value: "$54,800",
+//     value: "OMR 54,800",
 //     icon: DollarSign,
 //     color: "text-emerald-600",
 //     description: "Lifetime earnings",
