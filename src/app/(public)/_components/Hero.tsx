@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="bg-background">
-      <div className="mx-auto max-w-3xl px-6 pb-8 pt-20 text-center sm:pt-28">
+      <div className="mx-auto max-w-3xl px-4 pb-8 pt-10 text-center sm:px-6 sm:pt-28">
         <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-6xl sm:leading-[1.05]">
           A technician in Muscat today.
         </h1>

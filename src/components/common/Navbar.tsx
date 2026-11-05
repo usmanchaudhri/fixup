@@ -121,10 +121,10 @@ const dashboardLink =
   return (
     <nav className="sticky top-0 z-50 w-full bg-[var(--navy)] text-white shadow-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex h-20 items-center gap-3">
+        <div className="flex h-16 items-center gap-2 lg:h-20 lg:gap-3">
           <SiteLogo onDark large />
 
-          <div className="flex min-w-0 flex-1 items-center justify-center gap-1">
+          <div className="hidden min-w-0 flex-1 items-center justify-center gap-1 lg:flex">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -149,7 +149,7 @@ const dashboardLink =
           </div>
 
           {/* Right Side - Auth Section */}
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="ml-auto flex shrink-0 items-center gap-1.5 lg:gap-2">
             <div className="text-white [&_button]:text-white [&_button:hover]:bg-white/10 [&_button:hover]:text-white">
               <ThemeSwitcher />
             </div>
@@ -206,10 +206,10 @@ const dashboardLink =
             ) : (
               /* === Not Logged In: Login + Sign Up === */
               <div className="flex items-center gap-2">
-                <Button variant="ghost" className="h-11 px-4 text-lg text-white hover:bg-white/10 hover:text-white" asChild>
+                <Button variant="ghost" className="hidden h-11 px-4 text-lg text-white hover:bg-white/10 hover:text-white lg:inline-flex" asChild>
                   <Link href="/login">Login</Link>
                 </Button>
-                <Button className="h-11 px-5 text-lg bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90" asChild>
+                <Button className="h-9 px-3 text-sm bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90 lg:h-11 lg:px-5 lg:text-lg" asChild>
                   <Link href="/services">Book now</Link>
                 </Button>
               </div>
@@ -217,7 +217,7 @@ const dashboardLink =
 
             {/* Mobile Menu */}
             <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
-              <SheetTrigger asChild className="hidden">
+              <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon" aria-label="Open menu">
                   <Menu className="h-5 w-5" />
                 </Button>
@@ -273,10 +273,10 @@ const dashboardLink =
                       </>
                     ) : (
                       <div className="flex flex-col gap-3 px-2">
-                        <Button variant="outline" asChild className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white">
+                        <Button variant="outline" asChild className="w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white" onClick={() => setMenuOpen(false)}>
                           <Link href="/login">Login</Link>
                         </Button>
-                        <Button asChild className="w-full bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90">
+                        <Button asChild className="w-full bg-[var(--gold)] text-[var(--navy)] hover:bg-[var(--gold)]/90" onClick={() => setMenuOpen(false)}>
                           <Link href="/services">Book now</Link>
                         </Button>
                       </div>

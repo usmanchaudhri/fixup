@@ -271,7 +271,7 @@ export default function Login() {
 
   return (
     <Container>
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="flex items-center justify-center py-8 sm:min-h-[calc(100dvh-5rem)] sm:py-12">
         <Card className="w-full max-w-sm shadow-lg">
           <CardHeader className="space-y-2 text-center">
             <CardTitle className="text-primary text-2xl font-bold">

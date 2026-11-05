@@ -131,7 +131,7 @@ const Services = async ({ searchParams }: ServicesPageProps) => {
         {/* RIGHT - Services */}
         <main className="min-w-0">
           {/* Search */}
-          <div className="mb-6 flex justify-end">
+          <div className="mb-6 flex sm:justify-end">
             <ServicesSearchBar />
           </div>
 

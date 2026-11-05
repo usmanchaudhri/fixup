@@ -12,21 +12,21 @@ export default function SiteLogo({
       <div
         className={
           onDark
-            ? `flex items-center justify-center rounded-lg bg-[var(--gold)] ${large ? "h-11 w-11" : "h-9 w-9"}`
-            : `flex items-center justify-center rounded-lg bg-[var(--navy)] shadow-sm ${large ? "h-11 w-11" : "h-9 w-9"}`
+            ? `flex items-center justify-center rounded-lg bg-[var(--gold)] ${large ? "h-9 w-9 lg:h-11 lg:w-11" : "h-9 w-9"}`
+            : `flex items-center justify-center rounded-lg bg-[var(--navy)] shadow-sm ${large ? "h-9 w-9 lg:h-11 lg:w-11" : "h-9 w-9"}`
         }
       >
         <span
           className={
             onDark
-              ? `font-black tracking-tight text-[var(--navy)] ${large ? "text-base" : "text-sm"}`
-              : `font-black tracking-tight text-[var(--gold)] ${large ? "text-base" : "text-sm"}`
+              ? `font-black tracking-tight text-[var(--navy)] ${large ? "text-sm lg:text-base" : "text-sm"}`
+              : `font-black tracking-tight text-[var(--gold)] ${large ? "text-sm lg:text-base" : "text-sm"}`
           }
         >
           FX
         </span>
       </div>
-      <span className={large ? "text-xl font-bold tracking-tight sm:text-2xl" : "text-base font-bold tracking-tight sm:text-lg"}>
+      <span className={large ? "text-lg font-bold tracking-tight lg:text-2xl" : "text-base font-bold tracking-tight sm:text-lg"}>
         <span className={onDark ? "text-white" : "text-[var(--navy)] dark:text-white"}>
           FIXUP
         </span>

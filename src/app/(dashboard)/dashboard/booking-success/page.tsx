@@ -60,7 +60,7 @@ export default function BookingSuccessPage() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button asChild className="flex-1">
-              <Link href="/dashboard/bookings">
+              <Link href="/dashboard/my-bookings">
                 View My Bookings
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

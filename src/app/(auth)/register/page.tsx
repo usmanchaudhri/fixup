@@ -228,7 +228,7 @@ export default function RegisterPage() {
     <>
 
       <Container>
-        <div className="flex min-h-screen items-center justify-center py-10">
+        <div className="flex items-center justify-center py-8 sm:min-h-[calc(100dvh-5rem)] sm:py-12">
           <Card className="w-full max-w-md shadow-lg">
             {!role ? (
               <RoleSelector onSelect={setRole} />

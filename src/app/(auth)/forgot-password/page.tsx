@@ -19,7 +19,7 @@ import { Label } from "@/components/ui/label"
 export default function ForgotPassword() {
   return (
     <Container>
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="flex items-center justify-center py-8 sm:min-h-[calc(100dvh-5rem)] sm:py-12">
         <Card className="w-full max-w-sm shadow-lg">
           <CardHeader className="space-y-2 text-center">
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">

@@ -63,7 +63,7 @@ export default async function FindTechniciansPage({
   });
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto px-4 py-8 sm:px-6 sm:py-10">
       {/* Header */}
       <div className="mb-10 text-center">
         <h1 className="text-4xl font-bold tracking-tight">

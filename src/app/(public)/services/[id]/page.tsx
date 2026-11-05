@@ -27,17 +27,17 @@ import {
   Card,
   CardContent,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import {
   Star,
   Clock,
-  Calendar,
   Tag,
-  CheckCircle2,
-  XCircle,
 } from "lucide-react";
 import { IBookingSlot } from "@/types/types.service";
-import BookingModal from "../_components/BookingModal";
+import {
+  BookServiceButton,
+  BookingProvider,
+  SlotChoice,
+} from "../_components/BookingModal";
 
 const SingleServiceByIdPage = async ({
   params,
@@ -55,13 +55,16 @@ const SingleServiceByIdPage = async ({
 
   const { data } = await res.json();
 
+  const slots = (data?.bookingSlots ?? []) as IBookingSlot[];
+
   return (
-    <div className="container mx-auto py-10">
+    <BookingProvider serviceId={data.id} slots={slots}>
+    <div className="container mx-auto px-4 py-8 sm:px-6 sm:py-10">
       <div className="grid gap-8 lg:grid-cols-3">
         {/* Left */}
-        <div className="space-y-8 lg:col-span-2">
+        <div className="min-w-0 space-y-8 lg:col-span-2">
           <Card className="overflow-hidden">
-            <div className="relative h-[420px] w-full">
+            <div className="relative h-64 w-full sm:h-80 lg:h-[420px]">
               <Image
                 src={data.thumbnail}
                 alt={data.title}
@@ -129,53 +132,13 @@ const SingleServiceByIdPage = async ({
               </h2>
 
               <div className="grid gap-4 md:grid-cols-2">
-                {data.bookingSlots.map((slot: IBookingSlot) => (
-                  <div
-                    key={slot.id}
-                    className={`rounded-xl border p-4 ${slot.isAvailable
-                      ? "border-green-300 bg-green-50"
-                      : "border-red-200 bg-red-50"
-                      }`}
-                  >
-                    <div className="mb-3 flex items-center gap-2 font-semibold">
-                      <Calendar className="h-5 w-5" />
-
-                      {new Date(slot.date).toLocaleDateString()}
-                    </div>
-
-                    <p className="text-sm text-muted-foreground">
-                      {new Date(slot.startsAt).toLocaleTimeString([], {
-                        hour: "2-digit",
-                        minute: "2-digit",
-                      })}
-
-                      {" - "}
-
-                      {new Date(slot.endsAt).toLocaleTimeString([], {
-                        hour: "2-digit",
-                        minute: "2-digit",
-                      })}
-                    </p>
-
-                    <p className="mt-2 text-sm">
-                      {slot.note}
-                    </p>
-
-                    <div className="mt-3">
-                      {slot.isAvailable ? (
-                        <Badge className="bg-green-600">
-                          <CheckCircle2 className="mr-1 h-4 w-4" />
-                          Available
-                        </Badge>
-                      ) : (
-                        <Badge variant="destructive">
-                          <XCircle className="mr-1 h-4 w-4" />
-                          Booked
-                        </Badge>
-                      )}
-                    </div>
-                  </div>
-                ))}
+                {slots.length > 0 ? (
+                  slots.map((slot) => <SlotChoice key={slot.id} slot={slot} />)
+                ) : (
+                  <p className="text-sm text-muted-foreground">
+                    This service has no open slots yet.
+                  </p>
+                )}
               </div>
             </CardContent>
           </Card>
@@ -235,25 +198,13 @@ const SingleServiceByIdPage = async ({
                 </div>
               </div>
 
-              {/* <Button
-                className="w-full"
-                size="lg"
-                disabled={!data.isAvailable}
-              >
-                Book This Service
-              </Button> */}
-
-              <BookingModal
-                serviceId={data.id}
-                slots={data.bookingSlots.filter(
-                  (slot: IBookingSlot) => slot.isAvailable
-                )}
-              />
+              <BookServiceButton disabled={!data.isAvailable || slots.length === 0} />
             </CardContent>
           </Card>
         </div>
       </div>
     </div>
+    </BookingProvider>
   );
 };
 

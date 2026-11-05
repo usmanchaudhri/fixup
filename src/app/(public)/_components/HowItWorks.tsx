@@ -61,20 +61,20 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section aria-label="How a booking moves forward" className="px-6 py-10">
-      <ol className="relative mx-auto grid max-w-4xl grid-cols-5">
+      <ol className="relative mx-auto flex max-w-sm flex-col gap-5 sm:grid sm:max-w-4xl sm:grid-cols-5 sm:gap-0">
         <div
           aria-hidden
-          className="absolute left-[10%] right-[10%] top-7 h-1 rounded-full bg-[var(--gold)]"
+          className="absolute bottom-4 left-7 top-4 w-1 rounded-full bg-[var(--gold)] sm:bottom-auto sm:left-[10%] sm:right-[10%] sm:top-7 sm:h-1 sm:w-auto"
         />
         {steps.map((step, index) => (
-          <li key={step.label} className="relative flex flex-col items-center text-center">
+          <li key={step.label} className="relative flex items-center gap-4 sm:flex-col sm:items-center sm:gap-0 sm:text-center">
             <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--navy)] text-white">
               {step.icon}
               <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--gold)] text-[11px] font-bold text-[var(--navy)]">
                 {index + 1}
               </span>
             </div>
-            <span className="mt-3 text-sm font-medium text-foreground sm:text-base">
+            <span className="text-base font-medium text-foreground sm:mt-3">
               {step.label}
             </span>
           </li>

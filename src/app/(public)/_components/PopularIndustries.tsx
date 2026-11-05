@@ -21,14 +21,14 @@ const services: { label: string; Mark: ComponentType<{ className?: string }> }[]
 export default function PopularIndustries() {
   return (
     <nav aria-label="Services" className="px-6 py-8">
-      <ul className="mx-auto grid max-w-5xl grid-cols-3 gap-x-4 gap-y-8 sm:grid-cols-6">
+      <ul className="mx-auto grid max-w-5xl grid-cols-2 gap-x-4 gap-y-8 min-[420px]:grid-cols-3 sm:grid-cols-6">
         {services.map(({ label, Mark }) => (
           <li key={label}>
             <Link
               href="/services"
-              className="flex flex-col items-center gap-3 text-xl font-semibold text-foreground hover:text-[var(--navy)] sm:text-2xl"
+              className="flex flex-col items-center gap-3 text-center text-lg font-semibold text-foreground hover:text-[var(--navy)] sm:text-2xl"
             >
-              <Mark className="h-20 w-20 sm:h-24 sm:w-24" />
+              <Mark className="h-16 w-16 sm:h-24 sm:w-24" />
               {label}
             </Link>
           </li>
